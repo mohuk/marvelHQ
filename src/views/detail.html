@@ -1,10 +1,10 @@
 <section class="view-heading">
-  <h1>link to API</h1>
+  <h1 ng-bind="vm.char.name"></h1>
 </section>
 <section class="view-content">
   <div class="row">
     <div class="col-md-4">
-      <img ng-src="" height="200" width="200" alt="">
+      <img ng-src="{{vm.char.img}}" height="200" width="200" alt="">
     </div>
     <div class="col-md-8">
       <table class="table">
@@ -18,17 +18,16 @@
         </thead>
         <tbody>
           <tr>
-            <td>link to API</td>
-            <td>link to API</td>
-            <td>link to API</td>
-            <td>link to API</td>
+            <td ng-bind="vm.char.id"></td>
+            <td ng-bind="vm.char.comics.available"></td>
+            <td ng-bind="vm.char.series.available"></td>
+            <td ng-bind="vm.char.stories.available"></td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
   <div class="row view-content">
-    <p class="char-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean dolor dui, tincidunt malesuada accumsan non, ullamcorper a arcu. Aenean non magna ac ligula mattis cursus quis sit amet metus. Etiam sed magna in ligula laoreet luctus. Duis eu massa in dolor ultricies posuere. Proin ultricies eu eros id sollicitudin. Nulla at sem commodo, aliquam mi id, ornare magna. Phasellus vehicula velit eros, auctor sollicitudin nibh pellentesque quis. Cras a nibh elementum, auctor neque a, ornare justo. Sed mi purus, ullamcorper fermentum finibus sed, commodo id massa. Fusce eu metus vel ligula blandit viverra sed non lorem. Quisque tincidunt nunc ac varius egestas. Maecenas tristique ac purus nec tincidunt. Morbi quam nisi, tempus ut ex at, venenatis convallis tortor. Sed vestibulum suscipit sapien, et scelerisque arcu egestas in. Aliquam erat volutpat.
-    </p>
+    <p class="char-desc" ng-bind="vm.char.description"></p>
   </div>
 </section>

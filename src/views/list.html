@@ -11,7 +11,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr ng-repeat="char in chars">
+      <tr ng-repeat="char in vm.chars">
         <td>{{char.name}}</td>
         <td>{{char.description}}</td>
         <td><a ng-href="#/characters/{{char.id}}">View</a></td>
