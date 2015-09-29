@@ -3,7 +3,7 @@
   'use strict';
 
   angular.module('marvel')
-    .controller('marvelHQ', marvelHQ);
+    .factory('marvelHQ', marvelHQ);
 
 
   function marvelHQ(){
