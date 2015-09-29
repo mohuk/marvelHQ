@@ -1,0 +1,19 @@
+.view-heading {
+  text-align: center;
+  padding: 2em 0 2em 0;
+  background-color: rgb(240, 20, 30);
+}
+
+.view-heading > h1{
+  color: white;
+  font-weight: 900;
+}
+
+.view-content {
+  padding: 2em 0 2em 0;
+  font-size: 16px;
+}
+
+.char-desc {
+  overflow-wrap: break-word;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marvel HQ</title>
+  <link rel="shortcut icon" href="data:image/x-icon;," type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="src/styles/main.css">
+</head>
+<body>
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-route/angular-route.js"></script>
+  <script src="node_modules/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+
+  <script src="src/app.js"></script>
+  <script src="src/scripts/detail.controller.js"></script>
+  <script src="src/scripts/list.controller.js"></script>
+  <script src="src/scripts/marvelhq.factory.js"></script>
+
+  <div ng-app="marvel" class="container" ng-view>
+  </div>
+
+</body>
+</html>

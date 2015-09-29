@@ -1,0 +1,21 @@
+<section class="view-heading">
+  <h1>Characters List</h1>
+</section>
+<section class="view-content">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Bio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="char in chars">
+        <td>{{char.name}}</td>
+        <td>{{char.description}}</td>
+        <td><a ng-href="#/characters/{{char.id}}">View</a></td>
+      </tr>
+    </tbody>
+  </table>
+</section>
