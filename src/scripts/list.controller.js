@@ -6,8 +6,19 @@
     .controller('List', List);
 
 
-  function List(){
+  function List(marvelHQ){
+    var vm = this;
+    init();
 
+    ///////////////
+
+
+    function init(){
+      marvelHQ.list()
+        .then(function(res){
+          vm.chars = res.data.data.results;
+        });
+    }
   }
 
 
